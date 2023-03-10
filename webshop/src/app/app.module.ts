@@ -19,12 +19,19 @@ import { MatMenuModule } from "@angular/material/menu"
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsHeaderComponent } from './pages/home/components/products-header/products-header.component';
+import { FiltersComponent } from './pages/home/components/filters/filters.component';
+import { ProductContainerComponent } from './pages/home/components/product-container/product-container.component';
+import { CartComponent } from './pages/cart/cart.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    ProductsHeaderComponent
+    ProductsHeaderComponent,
+    FiltersComponent,
+    ProductContainerComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -42,6 +49,7 @@ import { ProductsHeaderComponent } from './pages/home/components/products-header
     MatBadgeModule,
     MatSnackBarModule,
     MatMenuModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
